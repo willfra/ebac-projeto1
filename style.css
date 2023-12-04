@@ -1,0 +1,167 @@
+@import url(./css/reset.css);
+@import url(https://fonts.googleapis.com/css?family=Bungee:regular);
+
+:root {
+    --primary-color: #182c61;
+    --white: #ffffff;
+}
+
+h1,
+h2,
+h3 {
+    font-family: "Bungee", regular;
+    font-weight: normal;
+}
+h2,
+h3 {
+    color: var(--primary-color);
+}
+
+.container {
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    background-color: var(--primary-color);
+    color: var(--white);
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-between;
+    font-family: "Bungee", regular;
+}
+.menu {
+    padding: 16px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+}
+.menu h1 {
+    cursor: pointer;
+}
+header .menu nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    font-size: 1rem;
+}
+header .menu nav li a {
+    color: var(--white);
+}
+section {
+    padding: 24px 0;
+}
+
+/* ------------SECTION SOBRE------------ */
+.sobre {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.sobre > img {
+    flex-grow: 1;
+    flex-basis: 0;
+    object-fit: cover;
+    max-height: 500px;
+}
+.sobre > div {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+    flex-grow: 1;
+    flex-basis: 300px;
+}
+
+.brands-list {
+    display: flex;
+    flex-direction: row;
+
+    gap: 20px;
+}
+.brands-list img {
+    height: 2rem;
+}
+
+/* ------------SECTION CONTATO------------ */
+
+
+#section-contato .container {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+#section-contato h2,
+#section-contato h3 {
+    margin-bottom: 20px;
+}
+.contato {
+    display: flex;
+    flex-direction: column;
+}
+.contato form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    max-width: 320px;
+}
+input::placeholder,
+textarea::placeholder,
+input, textarea {
+    text-indent: 10px;
+}
+input:focus, textarea:focus {
+    outline-color: var(--primary-color);
+}
+form textarea {
+    resize: none;
+}
+.redes-sociais {
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    justify-content: center;
+}
+.redes-sociais > div {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+}
+
+.redes-sociais img {
+    height: 2rem;
+}
+
+form button {
+    background-color: var(--primary-color);
+    color: white;
+    border: none;
+    padding: 10px;
+}
+form button:hover {
+    background-color: var(--primary-color);
+    opacity: 90%;
+    cursor: pointer;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+}
+footer .container {
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: flex-end;
+}
